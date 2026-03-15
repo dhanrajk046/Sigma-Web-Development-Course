@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi Color Website</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Multi-color Theme Variables */
+    :root {
+      --bg: #0b1220;          /* page background */
+      --surface: rgba(255,255,255,0.08);
+      --surface-2: rgba(255,255,255,0.12);
+      --text: #e5e7eb;
+      --muted: #b6c2d1;
+
+      --accent-1: #22c55e;    /* green */
+      --accent-2: #0ea5e9;    /* blue */
+      --accent-3: #a855f7;    /* purple */
+      --accent-4: #f97316;    /* orange */
+
+      --radius: 16px;
+      --shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+
+      --space-1: 8px;
+      --space-2: 12px;
+      --space-3: 18px;
+      --space-4: 28px;
+
+      --font-main: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background: radial-gradient(900px 500px at 10% 10%, rgba(14,165,233,0.35), transparent 55%),
+                  radial-gradient(800px 450px at 90% 20%, rgba(168,85,247,0.30), transparent 55%),
+                  radial-gradient(900px 500px at 40% 95%, rgba(34,197,94,0.25), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* Layout */
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+      padding: 28px 0;
+    }
+
+    /* Navbar */
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+
+    .logo {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent-2), var(--accent-3));
+      box-shadow: 0 10px 22px rgba(14,165,233,0.22);
+    }
+
+    .nav a {
+      color: var(--text);
+      text-decoration: none;
+      opacity: 0.9;
+      margin-left: 14px;
+      font-size: 14px;
+    }
+    .nav a:hover { opacity: 1; }
+
+    /* Hero */
+    .hero {
+      margin-top: 18px;
+      padding: 26px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(14,165,233,0.18), rgba(168,85,247,0.16), rgba(249,115,22,0.10));
+      border: 1px solid rgba(255,255,255,0.10);
+      box-shadow: var(--shadow);
+    }
+
+    .hero h1 {
+      font-size: clamp(26px, 3vw, 42px);
+      line-height: 1.1;
+      margin-bottom: var(--space-2);
+    }
+
+    .hero p {
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 70ch;
+      margin-bottom: var(--space-4);
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      border: none;
+      cursor: pointer;
+      padding: 11px 16px;
+      border-radius: 12px;
+      font-weight: 600;
+      color: #0b1220;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); opacity: 0.95; }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-2), var(--accent-3));
+    }
+
+    .btn-secondary {
+      background: linear-gradient(135deg, var(--accent-1), var(--accent-4));
+    }
+
+    /* Cards grid */
+    .grid {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: var(--space-4);
+      backdrop-filter: blur(10px);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      color: #0b1220;
+      font-weight: 700;
+    }
+
+    .b1 { background: linear-gradient(135deg, var(--accent-2), var(--accent-3)); }
+    .b2 { background: linear-gradient(135deg, var(--accent-1), var(--accent-2)); }
+    .b3 { background: linear-gradient(135deg, var(--accent-4), var(--accent-3)); }
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="nav">
+      <div class="brand">
+        <div class="logo"></div>
+        <span>MultiColor</span>
+      </div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Build a Multi-Color Website using CSS Variables</h1>
+      <p>
+        This layout uses a dark background with colorful gradients + reusable CSS variables.
+        Change only the variables in <b>:root</b> to completely change the theme.
+      </p>
+
+      <div class="cta-row">
+        <button class="btn btn-primary">Get Started</button>
+        <button class="btn btn-secondary">Explore Colors</button>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <span class="badge b1">Blue → Purple</span>
+        <h2>Modern UI</h2>
+        <p>Glass-like cards, smooth shadows, and colorful accents for a premium look.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge b2">Green → Blue</span>
+        <h2>Reusable Theme</h2>
+        <p>Change your website colors from one place using variables in :root.</p>
+      </div>
+
+      <div class="card">
+        <span class="badge b3">Orange → Purple</span>
+        <h2>Responsive</h2>
+        <p>Cards become one column on smaller screens using a media query.</p>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
