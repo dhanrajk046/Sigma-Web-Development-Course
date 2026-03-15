@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandForge - Business Name Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h2 class="logo">BrandForge</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#" class="btn-login">Login</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>AI Business Name Generator</h1>
+        <p>Create unique, creative, and brandable names for your startup in seconds.</p>
+
+        <div class="generator-box">
+            <input 
+                type="text" 
+                id="keyword" 
+                placeholder="Enter your business keyword (e.g. Tech, Finance)"
+            >
+
+            <select id="category">
+                <option value="startup">Startup</option>
+                <option value="tech">Tech</option>
+                <option value="finance">Finance</option>
+                <option value="ai">AI</option>
+                <option value="ecommerce">E-commerce</option>
+            </select>
+
+            <button id="generateBtn">Generate Names</button>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <h2>Generated Names</h2>
+        <div id="results" class="results-container">
+            <!-- Names will appear here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 BrandForge SaaS | Built by Dhanraj 🚀</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
