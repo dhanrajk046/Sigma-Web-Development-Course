@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Generator</title>
+</head>
+<body>
+  <h1>Employee Data Generator</h1>
+
+  <button id="generateBtn">
+    Generate Data
+  </button>
+
+  <p id="message"></p>
+
+  <script>
+    document
+      .getElementById("generateBtn")
+      .addEventListener("click", async () => {
+        const response = await fetch("/generate");
+        const result = await response.text();
+
+        document.getElementById("message").innerText =
+          result;
+      });
+  </script>
+</body>
+</html>
