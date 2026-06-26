@@ -7,10 +7,8 @@
     <title>Home/x</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="./src/output.css">
-    </span>
 </head>
 
 <body class="bg-black text-white">
@@ -29,7 +27,7 @@
             </div>
             <div class="Sidebar flex justify-end">
 
-                <ul class="flex flex-col text-2xl space-y-3 w-1/2 font-bold">
+                <ul class="flex flex-col text-2xl space-y-3 px-11 font-bold">
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full ">
                         <span class="text-3xl material-symbols-outlined ">home</span>Home
@@ -65,9 +63,63 @@
                 </ul>
             </div>
         </div>
-        <div class="second w-full border-[1px] border-x-white border-y-black">bb</div>
-        <div class="third w-full">cc</div>
-    </div>
+        <div class="second w-full border-[1px] border-x-white border-y-black">
+
+            <div class="top flex p-3 relative">
+                <div class="absolute w-16 h-1 rounded-full bg-blue-500 bottom-0 left-[19%]"></div>
+                <div class="left bg-red-3001 w-1/2 flex justify-center font-bold text-lg">For you</div>
+                <div class="right bg-green-3001 w-1/2 flex justify-center font-bold text-lg">Following</div>
+                <div class="settings mx-2"><span class="material-symbols-outlined">
+                        settings
+                    </span></div>
+            </div>
+            <hr>
+        </div>
+        <div class="third w-full bg-red-5044">
+            <div class="serach m-3">
+                <input type="text" class="w-1/2 rounded-full bg-[#16181c] text-white px-4 py-2" placeholder="Search">
+            </div>
+            <div class="Whats m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-3">
+                <h1 class="text-xl font-bold px-3">Whats Happening</h1>
+                <div class="item p-3 hover:bg-gray-800 cursor-pointer px-3">
+                    <div class="text-sm text-gray-200">Trending in India</div>
+                    <div class=" font-bold">Harry</div>
+                    <div class=" text-sm text-gray-200">40.2k Posts</div>
+                </div>
+
+                <div class="item p-3 hover:bg-gray-800 cursor-pointer px-3">
+                    <div class="text-sm text-gray-200">Trending in India</div>
+                    <div class="font-bold">Sigma Course</div>
+                    <div class="text-sm text-gray-200">40.2k Posts</div>
+                </div>
+
+                <div class="item p-3 hover:bg-gray-800 cursor-pointer px-3">
+                    <div class="text-sm text-gray-200">Trending in India</div>
+                    <div class=" font-bold">CodeWithHarry</div>
+                    <div class=" text-sm text-gray-200">40.2k Posts</div>
+                </div>
+
+                <div class="item p-3 hover:bg-gray-800 cursor-pointer px-3">
+                    <div class="text-sm text-gray-200">Trending in India</div>
+                    <div class=" font-bold">#CodeWithHarry</div>
+                    <div class=" text-sm text-gray-200">40.2k Posts</div>
+                </div>
+            </div>
+
+            <div class="Who m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-3">
+                <h1 class="text-xl font-bold px-3">Who To Follow</h1>
+
+
+                <div class="item p-3 px-3 space-y-4">
+                    <div class="font-bold cursor-pointer">CodeWithHarry</div>
+                    <div class="font-bold cursor-pointer" text-gray-200>Akshay Kumar</div>
+                    <div class="font-bold cursor-pointer" text-gray-200>Tiger Shroff</div>
+                    <div class="font-bold cursor-pointer" text-gray-200>Ameesha Patel</div>
+                </div>
+                <div>
+                    <div class="text-blue-600 px-3 underline my-5">Show More</div>
+                </div>
+            </div>
 </body>
 
 </html>
