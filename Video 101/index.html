@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home/x</title>
+    <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
@@ -25,7 +26,7 @@
                 </svg>
 
             </div>
-            <div class="Sidebar flex justify-end">
+            <div class="Sidebar flex justify-end flex-col">
 
                 <ul class="flex flex-col text-2xl space-y-3 px-11 font-bold">
                     <li
@@ -60,23 +61,104 @@
                         class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full ">
                         <span class="text-3xl material-symbols-outlined ">add</span>More
                     </li>
+                    <li>
+                        <div class="button w-full text-center my-4">
+                            <button class="bg-blue-600 px-20 text-xl rounded-full py-3 text-white">Post</button>
+                        </div>
+                    </li>
                 </ul>
+
             </div>
         </div>
+
         <div class="second w-full border-[1px] border-x-white border-y-black">
 
             <div class="top flex p-3 relative">
-                <div class="absolute w-16 h-1 rounded-full bg-blue-500 bottom-0 left-[19%]"></div>
+                <div class="absolute w-16 h-1 rounded-full bg-blue-500 bottom-0 left-[19%] z-10"></div>
                 <div class="left bg-red-3001 w-1/2 flex justify-center font-bold text-lg">For you</div>
                 <div class="right bg-green-3001 w-1/2 flex justify-center font-bold text-lg">Following</div>
                 <div class="settings mx-2"><span class="material-symbols-outlined">
                         settings
                     </span></div>
             </div>
+            <div class="h-[1px] w-full bg-gray-700"></div>
+            <div class="whatishapp flex gap-4 my-3">
+                <div class="img m-2 w-16">
+                    <img alt="Image" draggable="true"
+                        src="https://pbs.twimg.com/profile_images/2013258260468621313/bD-UBMUd_400x400.jpg"
+                        class="css-9pa8cd r-1adg3ll r-1udh08x r-1jgb5lz r-1ye8kvj r-13qz1uu rounded-full r-1cwl3u0 r-1w50u8q r-1d2f490 r-1xcajam r-zchlnj r-ipm5af r-417010 size-12">
+
+                </div>
+
+                <div class="w-full">
+
+                    <input class="w-[90%] h-7 my-3 text-3xl mx-2 bg-black outline-none text-white " type="text"
+                        placeholder="What is happening?">
+
+                    <div class="text-blue-600 flex item-center gap-2"><span class="material-symbols-outlined ">
+                            globe_asia
+                        </span>
+                        <span class="font-bold">Everyone can reply</span>
+                    </div>
+                    <div class="w-[90%] h-[0.2px] bg-gray-700 my-3"></div>
+                    <div class="blueicons flex gap-2 text-blue-400">
+                        <span class="material-symbols-outlined coursor cursor-pointer">
+                            image
+                        </span>
+                        <span class="material-symbols-outlined coursor cursor-pointer">
+                            contacts
+                        </span>
+                        <span class="material-symbols-outlined coursor cursor-pointer">
+                            gif_box
+                        </span>
+                        <span class="material-symbols-outlined coursor cursor-pointer">
+                            group_add
+                        </span>
+                        <span class="material-symbols-outlined coursor cursor-pointer">
+                            forms_add_on
+                        </span>
+                        <span class="material-symbols-outlined coursor cursor-pointer">
+                            where_to_vote
+                        </span>
+                    </div>
+
+                </div>
+
+
+            </div>
             <hr>
+            <div clas="posts">
+                <div class="post flex ">
+                    <div class="img m-4">
+                        <img alt="Image" draggable="true"
+                            src="https://pbs.twimg.com/profile_images/2013258260468621313/bD-UBMUd_400x400.jpg"
+                            class="css-9pa8cd r-1adg3ll r-1udh08x r-1jgb5lz r-1ye8kvj r-13qz1uu rounded-full r-1cwl3u0 r-1w50u8q r-1d2f490 r-1xcajam r-zchlnj r-ipm5af r-417010 size-12">
+                    </div>
+                    <div class="content">
+                        <span class="font-bold hover:underline text-white">
+                            Ted Forbes
+                        </span>
+                        <span class="text-gray-500">@tedforbes</span>
+                            <div>Chat models. Image models. Video models. Creative AI tools.
+
+                                RenderAI brings them together in one place, so you can create faster without switching
+                                tabs,
+                                tools, or subscriptions.
+
+                                Explore RenderAI →</div>
+                            <div class="postimg">
+                                <img src="https://pbs.twimg.com/media/HL6InsqXcAE_nUn?format=jpg&name=small" alt=""
+                                    class="src">
+                            </div>
+
+
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="third w-full bg-red-5044">
-            <div class="serach m-3">
+            <div class="search m-3">
                 <input type="text" class="w-1/2 rounded-full bg-[#16181c] text-white px-4 py-2" placeholder="Search">
             </div>
             <div class="Whats m-3 bg-[#16181c] w-1/2 py-5 rounded-xl space-y-3">
