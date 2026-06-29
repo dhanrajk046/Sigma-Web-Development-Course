@@ -14,7 +14,7 @@
 
 <body class="bg-black text-white">
     <div class="flex container mx-auto my-4">
-        <div class="first w-[70%]">
+        <div class="first w-10 md:w-[70%]">
             <div class="logo invert my-4">
                 <svg viewBox="0 0 24 24" aria-hidden="true"
                     class="w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
@@ -31,44 +31,52 @@
                 <ul class="flex flex-col text-2xl space-y-3 px-11 font-bold">
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full ">
-                        <span class="text-3xl material-symbols-outlined ">home</span>Home
+                        <span class="text-3xl material-symbols-outlined ">home</span><span
+                            class="hidden md:block">Home</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full ">
-                        <span class="text-3xl material-symbols-outlined ">Search</span>Explore
+                        <span class="text-3xl material-symbols-outlined ">Search</span><span
+                            class="hidden md:block">Explore</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full ">
-                        <span class="text-3xl material-symbols-outlined ">Notifications</span>Notifications
+                        <span class="text-3xl material-symbols-outlined ">Notifications</span><span
+                            class="hidden md:block">Notifications</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full ">
-                        <span class="text-3xl material-symbols-outlined ">add</span>Follow
+                        <span class="text-3xl material-symbols-outlined ">add</span><span
+                            class="hidden md:block">Follow</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full ">
-                        <span class="text-3xl material-symbols-outlined ">add</span>Chat
+                        <span class="text-3xl material-symbols-outlined ">add</span><span
+                            class="hidden md:block">Chat</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full ">
-                        <span class="text-3xl material-symbols-outlined ">add</span>Grok
+                        <span class="text-3xl material-symbols-outlined ">add</span><span
+                            class="hidden md:block">Grok</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full ">
-                        <span class="text-3xl material-symbols-outlined ">add</span>Profile
+                        <span class="text-3xl material-symbols-outlined ">add</span><span
+                            class="hidden md:block">Profile</span>
                     </li>
                     <li
                         class="flex justify-start items-center gap-3 w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-3 hover:rounded-full ">
-                        <span class="text-3xl material-symbols-outlined ">add</span>More
+                        <span class="text-3xl material-symbols-outlined ">add</span><span
+                            class="hidden md:block">More</span>
                     </li>
                     <li>
                         <div class="button w-full text-center my-4">
-                            <button class="bg-blue-600 px-20 text-xl rounded-full py-3 text-white">Post</button>
+                            <button class="bg-[#1d9bf0] px-20 text-xl rounded-full py-3 text-white">Post</button>
                         </div>
                     </li>
                 </ul>
 
-            </div>
+            </div><span></span>
         </div>
 
         <div class="second w-full border-[1px] border-x-white border-y-black">
@@ -128,17 +136,18 @@
             </div>
             <hr>
             <div clas="posts">
-                <div class="post flex ">
-                    <div class="img m-4">
-                        <img alt="Image" draggable="true"
-                            src="https://pbs.twimg.com/profile_images/2013258260468621313/bD-UBMUd_400x400.jpg"
-                            class="css-9pa8cd r-1adg3ll r-1udh08x r-1jgb5lz r-1ye8kvj r-13qz1uu rounded-full r-1cwl3u0 r-1w50u8q r-1d2f490 r-1xcajam r-zchlnj r-ipm5af r-417010 size-12">
-                    </div>
-                    <div class="content">
-                        <span class="font-bold hover:underline text-white">
-                            Ted Forbes
-                        </span>
-                        <span class="text-gray-500">@tedforbes</span>
+                <div class="post">
+                    <div class="flex">
+                        <div class="img m-4">
+                            <img alt="Image" draggable="true"
+                                src="https://pbs.twimg.com/profile_images/2013258260468621313/bD-UBMUd_400x400.jpg"
+                                class="css-9pa8cd r-1adg3ll r-1udh08x r-1jgb5lz r-1ye8kvj r-13qz1uu rounded-full r-1cwl3u0 r-1w50u8q r-1d2f490 r-1xcajam r-zchlnj r-ipm5af r-417010 size-12">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline cursor-pointer text-white">
+                                Ted Forbes
+                            </span>
+                            <span class="text-gray-500">@tedforbes</span>
                             <div>Chat models. Image models. Video models. Creative AI tools.
 
                                 RenderAI brings them together in one place, so you can create faster without switching
@@ -146,14 +155,257 @@
                                 tools, or subscriptions.
 
                                 Explore RenderAI →</div>
-                            <div class="postimg">
-                                <img src="https://pbs.twimg.com/media/HL6InsqXcAE_nUn?format=jpg&name=small" alt=""
+                            <div class="posting m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://pbs.twimg.com/media/HL6InsqXcAE_nUn?format=jpg&name=small" alt=""
                                     class="src">
                             </div>
+                            <div class="icons flex justify-between mx-3 text-gray-400">
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        Favorite
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>1k
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+                    <div class="icons flex">
 
                     </div>
                 </div>
+                <hr>
+                <div class="post">
+                    <div class="flex">
+                        <div class="img m-4">
+                            <img alt="Image" draggable="true"
+                                src="https://pbs.twimg.com/profile_images/2013258260468621313/bD-UBMUd_400x400.jpg"
+                                class="css-9pa8cd r-1adg3ll r-1udh08x r-1jgb5lz r-1ye8kvj r-13qz1uu rounded-full r-1cwl3u0 r-1w50u8q r-1d2f490 r-1xcajam r-zchlnj r-ipm5af r-417010 size-12">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline cursor-pointer text-white">
+                                Ted Forbes
+                            </span>
+                            <span class="text-gray-500">@tedforbes</span>
+                            <div>Chat models. Image models. Video models. Creative AI tools.
+
+                                RenderAI brings them together in one place, so you can create faster without switching
+                                tabs,
+                                tools, or subscriptions.
+
+                                Explore RenderAI →</div>
+                            <div class="posting m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://pbs.twimg.com/media/HL6InsqXcAE_nUn?format=jpg&name=small" alt=""
+                                    class="src">
+                            </div>
+                            <div class="icons flex justify-between mx-3 text-gray-400">
+                                <div class=" icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        Favorite
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>1k
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="icons flex">
+
+                    </div>
+                </div>
+                <hr>
+                <div class="post">
+                    <div class="flex">
+                        <div class="img m-4">
+                            <img alt="Image" draggable="true"
+                                src="https://pbs.twimg.com/profile_images/2013258260468621313/bD-UBMUd_400x400.jpg"
+                                class="css-9pa8cd r-1adg3ll r-1udh08x r-1jgb5lz r-1ye8kvj r-13qz1uu rounded-full r-1cwl3u0 r-1w50u8q r-1d2f490 r-1xcajam r-zchlnj r-ipm5af r-417010 size-12">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline cursor-pointer text-white">
+                                Ted Forbes
+                            </span>
+                            <span class="text-gray-500">@tedforbes</span>
+                            <div>Chat models. Image models. Video models. Creative AI tools.
+
+                                RenderAI brings them together in one place, so you can create faster without switching
+                                tabs,
+                                tools, or subscriptions.
+
+                                Explore RenderAI →</div>
+                            <div class="posting m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://pbs.twimg.com/media/HL6InsqXcAE_nUn?format=jpg&name=small" alt=""
+                                    class="src">
+                            </div>
+                            <div class="icons flex justify-between mx-3 text-gray-400">
+                                <div class=" icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        Favorite
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>1k
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="icons flex">
+
+                    </div>
+                </div>
+                <hr>
+                <div class="post">
+                    <div class="flex">
+                        <div class="img m-4">
+                            <img alt="Image" draggable="true"
+                                src="https://pbs.twimg.com/profile_images/2013258260468621313/bD-UBMUd_400x400.jpg"
+                                class="css-9pa8cd r-1adg3ll r-1udh08x r-1jgb5lz r-1ye8kvj r-13qz1uu rounded-full r-1cwl3u0 r-1w50u8q r-1d2f490 r-1xcajam r-zchlnj r-ipm5af r-417010 size-12">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline cursor-pointer text-white">
+                                Ted Forbes
+                            </span>
+                            <span class="text-gray-500">@tedforbes</span>
+                            <div>Chat models. Image models. Video models. Creative AI tools.
+
+                                RenderAI brings them together in one place, so you can create faster without switching
+                                tabs,
+                                tools, or subscriptions.
+
+                                Explore RenderAI →</div>
+                            <div class="posting m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://pbs.twimg.com/media/HL6InsqXcAE_nUn?format=jpg&name=small" alt=""
+                                    class="src">
+                            </div>
+                            <div class="icons flex justify-between mx-3 text-gray-400">
+                                <div class=" icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        Favorite
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>1k
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="icons flex">
+
+                    </div>
+                </div>
+                <hr>
+                <div class="post">
+                    <div class="flex">
+                        <div class="img m-4">
+                            <img alt="Image" draggable="true"
+                                src="https://pbs.twimg.com/profile_images/2013258260468621313/bD-UBMUd_400x400.jpg"
+                                class="css-9pa8cd r-1adg3ll r-1udh08x r-1jgb5lz r-1ye8kvj r-13qz1uu rounded-full r-1cwl3u0 r-1w50u8q r-1d2f490 r-1xcajam r-zchlnj r-ipm5af r-417010 size-12">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline cursor-pointer text-white">
+                                Ted Forbes
+                            </span>
+                            <span class="text-gray-500">@tedforbes</span>
+                            <div>Chat models. Image models. Video models. Creative AI tools.
+
+                                RenderAI brings them together in one place, so you can create faster without switching
+                                tabs,
+                                tools, or subscriptions.
+
+                                Explore RenderAI →</div>
+                            <div class="posting m-4 ml-0">
+                                <img class="rounded-xl"
+                                    src="https://pbs.twimg.com/media/HL6InsqXcAE_nUn?format=jpg&name=small" alt=""
+                                    class="src">
+                            </div>
+                            <div class="icons flex justify-between mx-3 text-gray-400">
+                                <div class=" icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        chat_bubble
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        repeat
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        Favorite
+                                    </span>1k
+                                </div>
+                                <div class="icon flex items-center justify-center">
+                                    <span class="material-symbols-outlined">
+                                        bar_chart
+                                    </span>1k
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="icons flex">
+
+                    </div>
+                </div>
+                <hr>
             </div>
         </div>
 
